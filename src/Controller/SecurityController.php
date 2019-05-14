@@ -39,6 +39,17 @@ class SecurityController extends Controller
         ]);
     }
     
+    /**
+     * @Route("/logout", name="logout", methods={"GET"})
+     * @param Request $request
+     * @return void
+     * @throws \Exception
+     */
+    public function logout(Request $request)
+    {
+        throw new \Exception('Don\'t forget to activate logout in security.yaml');
+    }
+    
     
     /**
      * @Route("/register", name="store_register", methods={"POST"})
