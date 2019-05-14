@@ -14,7 +14,7 @@ class StaticController extends Controller
      * @param Request $request
      * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function index(Request $request)
+    public function index()
     {
         return $this->render('static/index.html.twig', [
             'controller_name' => 'StaticController',
